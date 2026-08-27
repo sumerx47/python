@@ -1,0 +1,7 @@
+id,name,department,salary,experience,active
+E101,Ayaan,IT,55000,2,True
+E102,Sara,HR,62000,4,True
+E103,Zaid,IT,48000,1,False
+E104,Maryam,Finance,75000,6,True
+E105,Ali,IT,68000,5,True
+E106,Noor,HR,58000,3,True
