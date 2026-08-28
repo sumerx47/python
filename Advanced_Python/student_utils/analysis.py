@@ -25,8 +25,17 @@ def analyze_students(students):
     qualifying_students = [student for student in students if (student["active"] and student["attendance"] >= 80 and calculate_average(student["marks"]) >= 75)] 
 
     # 8 find skills common to all qualifying students
+    if qualifying_students:
+        common_skills = set.intersection(*(student["skills"] for student in qualifying_students))
 
+    else:
+        common_skills = set()
 
+    # 9 sort students by average
+    sorted_students = sorted([(student["name"], round(calculate_average(student["marks"]))) for student in students], key = lambda student: student[1], reverse=True)
+
+    # 10 create Tuples
+    student_results = [(student["name"], round(calculate_average(student["marks"]),1), get_grade(calculate_average(student["marks"])), (student["active"] and student["attendance"] >= 80 and calculate_average(student["marks"]) >= 75)) for student in students]
 
     return {
         "averages":averages,
@@ -35,7 +44,10 @@ def analyze_students(students):
         "highest_student":highest_student,
         "lowest_student":lowest_student,
         "all_skills":all_skills,
-        "qualifying_students":qualifying_students
+        "qualifying_students":qualifying_students,
+        "common_skills":common_skills,
+        "sorted_students":sorted_students,
+        "student_results":student_results
 
 
 

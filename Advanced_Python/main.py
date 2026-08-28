@@ -41,7 +41,12 @@ def main():
     print("\nHighest student: ", result["highest_student"]) 
     print("\nLowest student: ", result["lowest_student"]) 
     print("\nAll Skills: ", set(result["all_skills"])) 
-    print("\nQualifying_students: ", result["qualifying_students"]) 
+    print("\nQualifying students: ", result["qualifying_students"]) 
+    print("\nCommon skills: ", result["common_skills"]) 
+    print("\nSorted students: ", result["sorted_students"]) 
+    print("\nStudent results: ", result["student_results"]) 
+
+
 
 
 
