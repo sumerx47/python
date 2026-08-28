@@ -38,9 +38,10 @@ def main():
     print("Averages: ", result["averages"])
     print("\nGrades: ", result["grades"])
     print("\nEligible students: ", result["eligible_students"])
-    print("\nHighest_student: ", result["highest_student"]) 
-    print("\nLowest_student: ", result["lowest_student"]) 
-
+    print("\nHighest student: ", result["highest_student"]) 
+    print("\nLowest student: ", result["lowest_student"]) 
+    print("\nAll Skills: ", set(result["all_skills"])) 
+    print("\nQualifying_students: ", result["qualifying_students"]) 
 
 
 
