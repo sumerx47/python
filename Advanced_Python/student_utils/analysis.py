@@ -7,10 +7,28 @@ def analyze_students(students):
     # 2 calculate grade for every student
     grades = {student["name"]:get_grade(calculate_average(student["marks"])) for student in students}
 
+    # 3 find eligible students 
+    eligible_students = [student["name"] for student in students if (student["active"] and student["attendance"] >= 80 and calculate_average(student["marks"]) >= 75) ]
+
+    # 4 find highest average student
+    highest = max(students, key = lambda student:calculate_average(student["marks"]))
+    highest_student = (highest["name"],round(calculate_average(highest["marks"]),1))
+
+    # 5 find lowest average student 
+    lowest = min(students, key = lambda student:calculate_average(student["marks"]))
+    lowest_student = (lowest["name"], round(calculate_average(lowest["marks"]),1))
+
+
 
     return {
         "averages":averages,
-        "grades":grades
+        "grades":grades,
+        "eligible_students":eligible_students,
+        "highest_student":highest_student,
+        "lowest_student":lowest_student
+
+
+
     }
 
 

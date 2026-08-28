@@ -37,6 +37,9 @@ def main():
     result = analyze_students(students)
     print("Averages: ", result["averages"])
     print("\nGrades: ", result["grades"])
+    print("\nEligible students: ", result["eligible_students"])
+    print("\nHighest_student: ", result["highest_student"]) 
+    print("\nLowest_student: ", result["lowest_student"]) 
 
 
 
