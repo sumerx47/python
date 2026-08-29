@@ -19,10 +19,11 @@ def main():
     print("ERROR:", result["ERROR"])
     print("\nError Users:" , result["error_users"])
     print("\nUnique Errors:" , result["unique_errors"])
-
-
-
-
+    print("\nError frequency:" , result["error_frequency"])
+    print("\ntop error user:" , result["top_error_user"])
+    print("\nmost frequent error:" , result["most_frequent_error"])
+    print("\nsorted error users:" , result["sorted_error_users"])
+    print("\ninvalid logs:" , result["invalid_logs"])
 
 
 if __name__ == "__main__":
