@@ -17,8 +17,8 @@ def main():
     print("INFO:", result["INFO"])
     print("WARNING:", result["WARNING"])
     print("ERROR:", result["ERROR"])
-
-    #print("\nError Users:" , result["error_users"])
+    print("\nError Users:" , result["error_users"])
+    print("\nUnique Errors:" , result["unique_errors"])
 
 
 

@@ -8,6 +8,9 @@ def analyze_logs(logs):
         "ERROR":0
     }
 
+    error_users = set()
+    unique_errors = set()
+
 
     for line in logs:
         try:
@@ -23,7 +26,14 @@ def analyze_logs(logs):
         # count log levels
         level_counts[level] += 1
 
+        # process Error logs
+        if level == "ERROR":
 
+            # unique users
+            error_users.add(user)
+
+            # unique error messages
+            unique_errors.add(message)
 
 
 
@@ -33,6 +43,8 @@ def analyze_logs(logs):
     return {
         "INFO":level_counts["INFO"],
         "WARNING":level_counts["WARNING"],
-        "ERROR":level_counts["ERROR"]
+        "ERROR":level_counts["ERROR"],
+        "error_users":error_users,
+        "unique_errors":unique_errors,
     }
 
