@@ -6,22 +6,21 @@
             "metrics": {
                 "cpu": 85,
                 "memory": 72
-            },
-            "services": [
-                {"name": "nginx", "status": "running"},
-                {"name": "docker", "status": "running"}
-            ]
+            }
         },
         {
             "name": "web02",
             "metrics": {
                 "cpu": 45,
-                "memory": 60
-            },
-            "services": [
-                {"name": "nginx", "status": "running"},
-                {"name": "docker", "status": "stopped"}
-            ]
+                "memory": 91
+            }
+        },
+        {
+            "name": "web03",
+            "metrics": {
+                "cpu": 92,
+                "memory": 88
+            }
         }
     ]
 }
