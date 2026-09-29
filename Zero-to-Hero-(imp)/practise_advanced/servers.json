@@ -1,26 +1,6 @@
-{
-    "environment": "production",
-    "servers": [
-        {
-            "name": "web01",
-            "metrics": {
-                "cpu": 85,
-                "memory": 72
-            }
-        },
-        {
-            "name": "web02",
-            "metrics": {
-                "cpu": 45,
-                "memory": 91
-            }
-        },
-        {
-            "name": "web03",
-            "metrics": {
-                "cpu": 92,
-                "memory": 88
-            }
-        }
-    ]
-}
+[
+    {"name": "web01", "env": "production", "cpu": 75},
+    {"name": "web02", "env": "development", "cpu": 90},
+    {"name": "web03", "env": "production", "cpu": 92},
+    {"name": "web04", "env": "production", "cpu": 60}
+]

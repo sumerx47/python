@@ -1,5 +1,5 @@
-web01,prod
-web02,dev
-web03,prod
-web04,test
-web05,prod
+web01,running,production
+web02,stopped,production
+web03,running,development
+web04,running,production
+web05,stopped,development
