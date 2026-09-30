@@ -1,6 +1,10 @@
 [
-    {"name": "web01", "env": "production", "cpu": 75},
-    {"name": "web02", "env": "development", "cpu": 90},
-    {"name": "web03", "env": "production", "cpu": 92},
-    {"name": "web04", "env": "production", "cpu": 60}
+    {
+        "name": "web01",
+        "status": "maintenance"
+    },
+    {
+        "name": "web02",
+        "status": "stopped"
+    }
 ]
