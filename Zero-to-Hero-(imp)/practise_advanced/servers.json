@@ -1,29 +1,7 @@
 [
-    {
-        "name": "web01",
-        "environment": "production",
-        "status": "running",
-        "resources": {
-            "cpu": 85,
-            "memory": 72
-        }
-    },
-    {
-        "name": "web02",
-        "environment": "production",
-        "status": "running",
-        "resources": {
-            "cpu": 55,
-            "memory": 60
-        }
-    },
-    {
-        "name": "web03",
-        "environment": "development",
-        "status": "running",
-        "resources": {
-            "cpu": 95,
-            "memory": 80
-        }
-    }
+    {"name": "web01", "env": "production", "status": "running", "cpu": 85},
+    {"name": "web02", "env": "production", "status": "stopped", "cpu": 90},
+    {"name": "web03", "env": "development", "status": "running", "cpu": 95},
+    {"name": "web04", "env": "production", "status": "running", "cpu": 72},
+    {"name": "web01", "env": "production", "status": "running", "cpu": 90}
 ]
