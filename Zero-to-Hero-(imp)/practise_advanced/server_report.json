@@ -1,0 +1,12 @@
+[
+  {
+    "name": "web01",
+    "cpu": 85,
+    "status": "HIGH"
+  },
+  {
+    "name": "web02",
+    "cpu": 40,
+    "status": "NORMAL"
+  }
+]
