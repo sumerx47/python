@@ -1,0 +1,26 @@
+[
+    {
+        "host": "test-01",
+        "env": "test",
+        "cpu": 97,
+        "memory": 40,
+        "disk": 50,
+        "health": "CRITICAL"
+    },
+    {
+        "host": "db-01",
+        "env": "prod",
+        "cpu": 85,
+        "memory": 96,
+        "disk": 91,
+        "health": "CRITICAL"
+    },
+    {
+        "host": "web-01",
+        "env": "prod",
+        "cpu": 92,
+        "memory": 88,
+        "disk": 95,
+        "health": "CRITICAL"
+    }
+]

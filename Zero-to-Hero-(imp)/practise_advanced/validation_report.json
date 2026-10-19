@@ -1,0 +1,103 @@
+{
+    "valid_count": 4,
+    "rejected_count": 4,
+    "duplicate_count": 1,
+    "valid_records": [
+        {
+            "id": 1,
+            "host": "web-01",
+            "status": "running",
+            "cpu": 85,
+            "region": "ap-south-1",
+            "cpu_category": "MEDIUM"
+        },
+        {
+            "id": 2,
+            "host": "web-02",
+            "status": "stopped",
+            "cpu": 0,
+            "region": "ap-south-1",
+            "cpu_category": "LOW"
+        },
+        {
+            "id": 3,
+            "host": "db-01",
+            "status": "running",
+            "cpu": 95,
+            "region": "ap-south-2",
+            "cpu_category": "HIGH"
+        },
+        {
+            "id": 5,
+            "host": "web-05",
+            "status": "running",
+            "cpu": 72,
+            "region": "ap-south-2",
+            "cpu_category": "MEDIUM"
+        }
+    ],
+    "rejected_records": [
+        {
+            "record": {
+                "id": 4,
+                "host": "web-04",
+                "status": "running",
+                "cpu": "invalid",
+                "region": "ap-south-1"
+            },
+            "reasons": [
+                "CPU is missing or invalid"
+            ]
+        },
+        {
+            "record": {
+                "id": 6,
+                "host": "web-06",
+                "status": "unknown",
+                "cpu": "50",
+                "region": "ap-south-2"
+            },
+            "reasons": [
+                "Unsupported status"
+            ]
+        },
+        {
+            "record": {
+                "id": 7,
+                "host": "web-07",
+                "status": "running",
+                "cpu": "105",
+                "region": "ap-south-1"
+            },
+            "reasons": [
+                "CPU must be between 0 and 100"
+            ]
+        },
+        {
+            "record": {
+                "id": 8,
+                "host": "web-08",
+                "status": "running",
+                "region": "ap-south-1"
+            },
+            "reasons": [
+                "Missing fields: cpu",
+                "CPU is missing or invalid"
+            ]
+        }
+    ],
+    "regional_summary": {
+        "ap-south-1": {
+            "server_count": 2,
+            "average_cpu": 42.5,
+            "highest_cpu_server": "web-01",
+            "highest_cpu": 85
+        },
+        "ap-south-2": {
+            "server_count": 2,
+            "average_cpu": 83.5,
+            "highest_cpu_server": "db-01",
+            "highest_cpu": 95
+        }
+    }
+}

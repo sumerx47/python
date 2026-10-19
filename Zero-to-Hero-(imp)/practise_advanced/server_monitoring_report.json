@@ -1,0 +1,136 @@
+{
+    "unique_server_count": 5,
+    "servers": [
+        {
+            "host": "web-01",
+            "env": "prod",
+            "cpu": 92,
+            "memory": 88,
+            "disk": 95,
+            "health": "CRITICAL"
+        },
+        {
+            "host": "web-02",
+            "env": "prod",
+            "cpu": 45,
+            "memory": 60,
+            "disk": 70,
+            "health": "HEALTHY"
+        },
+        {
+            "host": "db-01",
+            "env": "prod",
+            "cpu": 85,
+            "memory": 96,
+            "disk": 91,
+            "health": "CRITICAL"
+        },
+        {
+            "host": "test-01",
+            "env": "test",
+            "cpu": 97,
+            "memory": 40,
+            "disk": 50,
+            "health": "CRITICAL"
+        },
+        {
+            "host": "web-03",
+            "env": "prod",
+            "cpu": 75,
+            "memory": 82,
+            "disk": 65,
+            "health": "WARNING"
+        }
+    ],
+    "production_averages": {
+        "cpu": 74.25,
+        "memory": 81.5,
+        "disk": 80.25
+    },
+    "grouped_servers": {
+        "prod": {
+            "CRITICAL": [
+                "web-01",
+                "db-01"
+            ],
+            "HEALTHY": [
+                "web-02"
+            ],
+            "WARNING": [
+                "web-03"
+            ]
+        },
+        "test": {
+            "CRITICAL": [
+                "test-01"
+            ]
+        }
+    },
+    "critical_production_servers": [
+        "web-01",
+        "db-01"
+    ],
+    "log_severity_counts": {
+        "ERROR": 4,
+        "WARNING": 2,
+        "INFO": 2
+    },
+    "errors_per_host": {
+        "web-01": 2,
+        "db-01": 2
+    },
+    "repeated_error_messages": {
+        "web-01": {
+            "web-01 connection timeout": 2
+        },
+        "db-01": {
+            "db-01 database unavailable": 2
+        }
+    },
+    "critical_servers_with_errors": [
+        "web-01",
+        "db-01"
+    ],
+    "alerts": [
+        {
+            "host": "test-01",
+            "env": "test",
+            "cpu": 97,
+            "memory": 40,
+            "disk": 50,
+            "health": "CRITICAL"
+        },
+        {
+            "host": "db-01",
+            "env": "prod",
+            "cpu": 85,
+            "memory": 96,
+            "disk": 91,
+            "health": "CRITICAL"
+        },
+        {
+            "host": "web-01",
+            "env": "prod",
+            "cpu": 92,
+            "memory": 88,
+            "disk": 95,
+            "health": "CRITICAL"
+        },
+        {
+            "host": "web-03",
+            "env": "prod",
+            "cpu": 75,
+            "memory": 82,
+            "disk": 65,
+            "health": "WARNING"
+        },
+        {
+            "host": "web-02",
+            "env": "prod",
+            "cpu": 45,
+            "memory": 60,
+            "disk": 70,
+            "health": "HEALTHY"
+        }
+    ]
+}

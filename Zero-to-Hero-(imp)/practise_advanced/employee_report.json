@@ -1,0 +1,167 @@
+{
+    "total_employees": 6,
+    "employees": [
+        {
+            "id": 101,
+            "name": "Alice",
+            "dept": "It",
+            "salary": 60000,
+            "scores": [
+                85,
+                90,
+                95
+            ],
+            "skills": [
+                "Python",
+                "Sql"
+            ],
+            "average_score": 90.0,
+            "rating": "Excellent"
+        },
+        {
+            "id": 102,
+            "name": "Bob",
+            "dept": "Hr",
+            "salary": 45000,
+            "scores": [
+                70,
+                75,
+                80
+            ],
+            "skills": [
+                "Communication",
+                "Excel"
+            ],
+            "average_score": 75.0,
+            "rating": "Average"
+        },
+        {
+            "id": 103,
+            "name": "Charlie",
+            "dept": "It",
+            "salary": 75000,
+            "scores": [
+                95,
+                92,
+                98
+            ],
+            "skills": [
+                "Docker",
+                "Python"
+            ],
+            "average_score": 95.0,
+            "rating": "Excellent"
+        },
+        {
+            "id": 104,
+            "name": "Alice",
+            "dept": "It",
+            "salary": 65000,
+            "scores": [
+                90,
+                90,
+                90
+            ],
+            "skills": [
+                "Linux",
+                "Python"
+            ],
+            "average_score": 90.0,
+            "rating": "Excellent"
+        },
+        {
+            "id": 105,
+            "name": "Eva",
+            "dept": "Finance",
+            "salary": 50000,
+            "scores": [
+                60,
+                65,
+                70
+            ],
+            "skills": [
+                "Excel",
+                "Sql"
+            ],
+            "average_score": 65.0,
+            "rating": "Needs Improvement"
+        },
+        {
+            "id": 106,
+            "name": "Frank",
+            "dept": "It",
+            "salary": 80000,
+            "scores": [
+                88,
+                91,
+                93
+            ],
+            "skills": [
+                "Aws",
+                "Docker"
+            ],
+            "average_score": 90.67,
+            "rating": "Excellent"
+        }
+    ],
+    "highest_paid": "Frank",
+    "highest_performer": "Charlie",
+    "department_summary": {
+        "It": {
+            "employee_count": 4,
+            "average_salary": 70000.0
+        },
+        "Hr": {
+            "employee_count": 1,
+            "average_salary": 45000.0
+        },
+        "Finance": {
+            "employee_count": 1,
+            "average_salary": 50000.0
+        }
+    },
+    "knows_python_and_sql": [
+        "Alice"
+    ],
+    "unique_skills": [
+        "Aws",
+        "Communication",
+        "Docker",
+        "Excel",
+        "Linux",
+        "Python",
+        "Sql"
+    ],
+    "ranked_employees": [
+        {
+            "name": "Charlie",
+            "average_score": 95.0,
+            "rating": "Excellent"
+        },
+        {
+            "name": "Frank",
+            "average_score": 90.67,
+            "rating": "Excellent"
+        },
+        {
+            "name": "Alice",
+            "average_score": 90.0,
+            "rating": "Excellent"
+        },
+        {
+            "name": "Alice",
+            "average_score": 90.0,
+            "rating": "Excellent"
+        },
+        {
+            "name": "Bob",
+            "average_score": 75.0,
+            "rating": "Average"
+        },
+        {
+            "name": "Eva",
+            "average_score": 65.0,
+            "rating": "Needs Improvement"
+        }
+    ]
+}

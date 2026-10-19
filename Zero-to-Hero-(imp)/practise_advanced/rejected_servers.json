@@ -1,0 +1,50 @@
+[
+    {
+        "record": {
+            "id": 4,
+            "host": "web-04",
+            "status": "running",
+            "cpu": "invalid",
+            "region": "ap-south-1"
+        },
+        "reasons": [
+            "CPU is missing or invalid"
+        ]
+    },
+    {
+        "record": {
+            "id": 6,
+            "host": "web-06",
+            "status": "unknown",
+            "cpu": "50",
+            "region": "ap-south-2"
+        },
+        "reasons": [
+            "Unsupported status"
+        ]
+    },
+    {
+        "record": {
+            "id": 7,
+            "host": "web-07",
+            "status": "running",
+            "cpu": "105",
+            "region": "ap-south-1"
+        },
+        "reasons": [
+            "CPU must be between 0 and 100"
+        ]
+    },
+    {
+        "record": {
+            "id": 8,
+            "host": "web-08",
+            "status": "running",
+            "region": "ap-south-1"
+        },
+        "reasons": [
+            "Missing fields: cpu",
+            "CPU is missing or invalid"
+        ]
+    }
+]
